@@ -1,0 +1,118 @@
+
+@import url(main.css);
+
+
+@media only screen and (max-width: 600px){
+    .container{
+        width: 100%;
+    }
+}
+
+.ml-3{
+    margin-left: 0.4rem;
+}
+
+
+.header-mobile__top__background{
+    background: var(--gradient_background);
+    
+}
+.header-mobile{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+.header-mobile__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 14px 15px 18px ;
+    font-size: 1.3rem;
+    color: var(--color-white);
+    width: 100%;
+}
+
+.header-mobile__top__menu{
+    padding: 7px 10px 5px 10px;
+    border-radius: 3px;
+    justify-content: center;
+    border: 1px solid white;
+}
+
+.header-mobile__top__items{
+    justify-content: center;
+}
+.header-mobile__top__menu_items:hover{
+     cursor: pointer;
+}
+
+.header-mobile__top__menu_items--display-none{
+    display: none;
+}
+
+/*********end of header-mobile__top********/
+
+
+.header-mobile__bottom__shadow{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.header-mobile__bottom{
+    display: flex;
+    align-items: center;
+    padding: 12px 25px 12px 18px;
+    justify-content: space-between;
+}
+
+.header-mobile__bottom__logo{
+    width: 20%;
+}
+.header-mobile__bottom__logo img{
+    width:50px;
+    height: auto;
+}
+
+.header-mobile__bottom__tools{
+    display: flex;
+    width: 80%;
+    justify-content: end;
+}
+
+.header-mibile__bottom__tools__items{
+    display: flex;
+}
+
+.header-mobile__bottom__tools__items_account{
+    display: flex;
+    align-items: center;
+    background: var(--green-btn);
+    padding: 0px 16px 0px 25px;
+    margin: 0px 12px 0px 0px;
+    font-size: 1.2rem;
+    font-weight:500 ;
+    color: var(--color-white);
+    border-radius: var(--btn-border-radius);
+}
+
+.header-mobile__bottom__tools__items_account i{
+    margin: 0px 0px 0px 15px;
+}
+
+.header-mobile__bottom__tools__items_search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--circle-border-radius);
+    background: var(--secondary-color);
+    color: var(--color-white);
+    width: 40px;
+    height: 40px;
+}
+
+.header-mobile__bottom__tools__items_search:hover{
+    cursor: pointer;
+}
+.header-mobile__bottom__tools__items_account:hover{
+    cursor: pointer;
+}

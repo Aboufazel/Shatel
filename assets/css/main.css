@@ -3,6 +3,11 @@
     src: url(../fonts/IRANSansWeb.woff2) format('woff2');
 }
 
+@font-face {
+    font-family: "fasans";
+    src: url(../fonts/Sans\ a4fran3.woff) format('woff');
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -15,7 +20,7 @@ html{
 
 body{
     direction: rtl;
-    font-family: "iransans";
+    font-family: "iransans" , sans-serif ,"fasans";
     display: flex;
     flex-direction: column;
 }
@@ -26,6 +31,7 @@ body{
    --action-color: #F26322;
    --green-btn: #56C45F;
    --footer-action:#FACF54;
+   --color-white:#fff;
    --primary-color: #3f86ec;
    --secondary-color:#CCCDD1;
    --underline-color:#F9CF55;
@@ -35,7 +41,10 @@ body{
    --box-shadow:-0px 0px 41px 30px rgba(0,0,0,0.21);
    --btn-border-radius:25px;
    --box-border-radius:5px;
+   --circle-border-radius:50%;
 }
+
+
 
 .row_flex{
     display: flex;
@@ -75,8 +84,8 @@ body{
 }
 
 .container{
-    border: 1px solid red;
-    width: 80%;
+    width: 75%;
     display: flex;
+    flex-direction: column;
     align-self: center;
 }
