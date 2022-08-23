@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "iransans";
+    src: url(../fonts/IRANSansWeb.woff2) format('woff2');
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    direction: rtl;
+    font-family: "iransans";
+    display: flex;
+    flex-direction: column;
+}
+:root{
+   --gradient_background:linear-gradient(90deg, rgba(0,184,249,1) 0%, rgba(0,106,236,1) 100%);
+   --action-color: #F26322;
+   --green-btn: #56C45F;
+   --footer-action:#FACF54;
+   --primary-color: #3f86ec;
+   --secondary-color:#CCCDD1;
+   --underline-color:#F9CF55;
+   --footer-color:#242C39;
+   --footer-gradiant:linear-gradient(90deg, rgba(126,241,168,1) 0%, rgba(94,229,191,1) 50%, rgba(6,195,250,1) 100%);
+   --banner-color: rgb(0,42,99);
+   --box-shadow:-0px 0px 41px 30px rgba(0,0,0,0.21);
+   --btn-border-radius:23px;
+   --box-border-radius:5px;
+   --menue-color:#1B162D;
+}
+/* .container{
+    border: 1px solid gold;
+    width: 80%;
+    align-self: center;
+} */
+.icon_menu{
+    width: 35px;
+    height: 35px;
+    fill: white;
+    position: relative;  
+}
+/* collapsibles */
+.collapsible__header{
+    display: flex;
+    justify-content: space-between;
+}
+.collapsible__heading{
+    margin-top: 0;
+    font-size: 3rem;  
+}
+.collapsible__content{
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 1.1s;
+}
+.collapsible--expanded .collapsible__content{
+    max-height: 500%;
+    flex-direction: column;
+    opacity: 1; 
+}
+/* collapsible done. */
+/* navbar */
+.mobile__header{
+    display: flex;
+    height: 180px;
+}
+
+.mobile__nav__top{
+    width: 100%;
+    height: 70px;
+    background: var(--gradient_background);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mobile__top__right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2%;
+}
+.mobile__top__left{
+    display: flex;
+    justify-content: center;
+    margin-left: 2%;
+}
+
+.phone__number{
+    font-family: "iransans";
+    font-size: 1.4rem;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    color: white
+}
+
+.mobile__nav__list{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    margin-top: 15px;
+    background-color: var(--menue-color);
+}
+
+.nav__item{
+    padding: 15px;
+    font-size: 1.5rem;
+    
+    
+}
+.nav__item>a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--secondary-color);
+}
+
+.item__border--buttom{
+    border-bottom:1px solid #CCCDD1;
+}
+
+
+
+
+
+
+
+
