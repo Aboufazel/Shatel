@@ -70,3 +70,34 @@ body{
     z-index: 0;
     
 }
+.icon{
+    width: 35px;
+    height: 35px;
+    
+}
+
+/* collapsibles */
+.collapsible__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapsible__heading{
+    margin-top: 0;
+    font-size: 3rem;
+    
+}
+
+.collapsible__content{
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__content{
+    max-height:100% ;
+    opacity: 1;
+    
+}
+/* collapsible done. */
