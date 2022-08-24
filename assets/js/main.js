@@ -25,8 +25,33 @@ const proTitle = document.querySelector(".proTitle");
 
 proTitle.addEventListener(
     "click" , function(e){
-       proBox.classList.remove("product-d-none");
+       if(proBox.classList.contains("product-d-none")){
+        proBox.classList.remove("product-d-none");
+       }
+       else{
+        proBox.classList.toggle("product-d-none");
+       }
+    }
+);
+
+/************product select**********/
+
+
+
+
+/************support select*************/
+const supportBox = document.querySelector(".support-d-none");
+const supportTitle = document.querySelector(".suppTitle");
+
+supportTitle.addEventListener(
+    "click" , function(e){
+        if(supportBox.classList.contains("support-d-none")){
+            supportBox.classList.remove("support-d-none");
+        }
+        else{
+            supportBox.classList.toggle("support-d-none");
+        }
     }
 )
 
-/************product select**********/
+/************support select*************/
