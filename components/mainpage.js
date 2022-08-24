@@ -18,3 +18,6 @@ const list = $.querySelector('.menu__item__burger');
     }
 })
 
+
+
+
