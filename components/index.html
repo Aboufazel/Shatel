@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/header.css">
@@ -11,37 +12,75 @@
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/cc236d5619.js" crossorigin="anonymous"></script>
+
     <title>shatel_Sample</title>
 </head>
 
 <body>
-    <header class="header-mobile">
-        <div class="row_flex header-mobile__top__background center_content">
+    <header class="header">
+        <div class="row_flex header__top__background center_content">
             <div class="container">
-                <div class="header-mobile__top">
-                    <div class="header-mobile__top__menu"><div class="header-mobile__top__menu_items--display-none"><i class="fa fa-xmark fa-lg"></i></div><div class="header-mobile__top__menu_items"><i class="fa-solid fa-bars fa-lg"></i></div></div>
-                    <div class="header-mobile__top__items"><i class="fa-solid fa-phone-flip ml-3"></i>شماره سراسری 91000000</div>
+                <div class="header__top">
+                    <div class="header__top__menu">
+                        <div class="menu burgerMenu__toggle"><i class="fa-solid fa-bars fa-lg"></i></div>
+                    </div>
+                    <div class="header__top__items"><i class="fa-solid fa-phone-flip ml-3"></i> شماره سراسری ۹۱۰۰۰۰۰۰
+                    </div>
+                </div>
+                <div class="header__top__menu__box">
+                    <div class="header__top__menu__box__item">
+                        <div class="proTitle">محصولات و خدمات</div>
+                        <div class="product__items__box product-d-none">
+                            <div class="product__items"><a href="#">خدمات اینترنت پر سرعت</a></div>
+                            <div class="product__items"><a href="#">خدمات تلفن</a></div>
+                            <div class="product__items"><a href="#">خدمات همراه</a></div>
+                            <div class="product__items"><a href="#">خدمات محتوا</a></div>
+                        </div>
+                    </div>
+                    <div class="header__top__menu__box__item">
+                        <div class="suppTitle">پشتیبانی</div>
+                        <div class="support__items__box support-d-none">
+                            <div class="support__items"><a href="#">راهنکای استفاده از خدمات پشتیبانی</a></div>
+                            <div class="support__items"><a href="#">تست سرعت</a></div>
+                            <div class="support__items"><a href="#">سیستم هوشمند پشتیبانی فنی</a></div>
+                            <div class="support__items"><a href="#">محتوای آموزشی</a></div>
+                            <div class="support__items"><a href="#">مدیریت ترافیک مصرفی</a></div>
+                            <div class="support__items"><a href="#">مرکز دانلود</a></div>
+                            <div class="support__items"><a href="#">اپلیکشن مای‌شاتل</a></div>
+                            <div class="support__items"><a href="#">درخواست SLA</a></div>
+                        </div>
+                    </div>
+                    <div class="header__top__menu__box__link">
+                        <a href="#" target="_blank">چرا شاتل؟</a>
+                    </div>
+                    <div class="header__top__menu__box__link">
+                        <a href="#" target="_blank">راهکار های سازمانی</a>
+                    </div>
+                    <div class="header__top__menu__box__link">
+                        <a href="#" target="_blank">English</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row_flex center_content header-mobile__bottom__shadow">
+        <div class="row_flex center_content header__bottom__shadow">
             <div class="container">
-                <div class="header-mobile__bottom">
-                    <div class="header-mobile__bottom__logo">
+                <div class="header__bottom">
+                    <div class="logo">
                         <img src="../assets/pics/Shatel_Logo.png" alt="shatel-logo">
                     </div>
-                    <div class="header-mobile__bottom__tools">
-                       <div class="header-mibile__bottom__tools__items">
-                        <div class="header-mobile__bottom__tools__items_search"><i class="fa-solid fa-magnifying-glass fa-2xl"></i></div>
-                       </div>
-                       <div class="header-mibile__bottom__tools__items">
-                        <div class="header-mobile__bottom__tools__items_account"><i class="fa-solid fa-user fa-xl"></i>ورود به مای‌شاتل</div>
-                       </div>
+                    <div class="header__bottom__tools">
+                        <div class="header__bottom__tools__items">
+                            <div class="search"><i class="fa-solid fa-magnifying-glass fa-2xl"></i></div>
+                        </div>
+                        <div class="header__bottom__tools__items">
+                            <div class="account"><i class="fa-solid fa-user fa-xl"></i>ورود به مای‌شاتل</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 </body>
+<script type="text/javascript" src="../assets/js/main.js"></script>
 
 </html>
