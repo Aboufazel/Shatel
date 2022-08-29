@@ -248,6 +248,7 @@ li{
   bottom: 10px;
   cursor: pointer;
 }
+
 @media screen and (max-width:576px){
   .col-xs-1{width: 8.33%;}
   .col-xs-2{width: 16.66%;}
