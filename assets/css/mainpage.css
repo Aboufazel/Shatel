@@ -111,17 +111,111 @@
 .h_260{
   height: 260px;
 }
-.image{
-  width: 100% !important;
+
+.box__Customers{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
 }
-
-
-
-
-
-
-
-
+.card__Customers{
+  padding:8% 0 0 0 ;
+}
+.Shuttle__club p,h5{
+  color: rgb(106, 107, 110);
+  font-size: 14px;
+  line-height: 25.2px;
+  margin-top: 28px;
+}
+.Shuttle__club h4{
+  color: rgb(158, 159, 165);
+  font-size: 13px;
+  line-height: 26px;
+}
+.Shuttle__club h1{
+  height: 34px;
+  color: #000;
+  font-size: 22px;
+}
+.dir{
+  direction: ltr;
+  text-align: right;
+}
+.btn{
+  background-color: #3f86ec;
+  border-radius: 25px;
+  padding: 8px 30px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  height: 39px;
+  margin: 30px 0 0 0;
+}
+.row__3{
+  background-image: url(../image/elements_bg.png);
+}
+.image{
+  border-radius: 5px;
+}
+.row__4{
+  height: 600px;
+  background-image: url(../image/back-summer.png);
+}
+.Shuttle__offer{
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title{
+  font-size: 22px;
+  font-weight: 700;
+  padding: 80px;
+}
+.box__slider{
+  display: flex;
+  justify-content: center;
+}
+.card__slide{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.box__slide{
+  background-color: #fafcfd;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+}
+.text__slider h2,h5{
+  text-align: right;
+}
+.text__slider h2{
+  color: #3e3e41;
+  font-size: 16px;
+}
+.text__slider h5{
+   color: #6a6b6e;
+   font-size: 13px;
+   margin-bottom: 15px;
+   line-height: 1.8;
+}
+.text__slider button{
+  background-color: #56c45f;
+  color: #fff;
+  font-size: 13px;
+  padding: 5px 30px;
+  border-radius: 25px;
+  border: none;
+}
+.p__25{
+  padding: 25px;
+}
 
 @media screen and (max-width:576px){
   .col-xs-1{width: 8.33%;}
@@ -164,6 +258,14 @@
   .col-md-10{width: 83.33%;}
   .col-md-11{width: 91.66%;}
   .col-md-12{width: 100%;}
+  .card__Customers{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2%;
+  }
+  .image{
+    width: 49% !important;
+  }
 }
 @media screen and (min-width:992px){
   .col-lg-1{width: 8.33%;}
