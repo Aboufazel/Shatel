@@ -25,8 +25,6 @@ function classSwitcher() {
   slide[active].classList.add('active');
 
 }
-
-
 let goNext =() =>{
   console.log(active);
   active++;
