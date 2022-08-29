@@ -11,13 +11,15 @@
     display: flex;
     justify-content: center;
     font-size: 1.2rem;
+    
 }
 
 .header__Laptap-L__bottom,.header__Laptap__bottom,.header__Mobile__bottom{
-   box-shadow: var(--box-shadow); 
-   height: 82px;
-   z-index: 1;
-   position: relative;
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    height: 82px;
+    z-index: 1;
+    position: relative;
 }
 .header__Mobile__top ,.header__Laptap__top,.header__Laptap-L__top{
     height: 56px;
@@ -89,10 +91,6 @@
     color:#fff;
     z-index: 1;
     font-size: 12px;
-}
-
-.menu__item__burger1{
-    list-style-type: none;
 }
 .menu__item__burger li{
     font-size: 12px;
@@ -333,7 +331,6 @@
         display: none;
     }
 }
-
 @media screen and (min-width:769px){
     .header__Mobile__top ,.header__Mobile__bottom ,.header__Laptap-L__top,.header__Laptap-L__bottom{
         display: none;
