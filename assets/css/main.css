@@ -36,6 +36,7 @@ body{
    --green-btn: #56C45F;
    --footer-action:#FACF54;
    --color-white:#fff;
+   --topic-color:#616161;
    --primary-color: #3f86ec;
    --secondary-color:#CCCDD1;
    --underline-color:#F9CF55;
@@ -47,6 +48,9 @@ body{
    --box-border-radius:5px;
    --circle-border-radius:50%;
    --burger-background:#1B162D;
+   --title-border-color:#8c88ff;
+   --slider-border-color:#ffc107;
+   --gray-background:#F8F8F8;
 }
 
 

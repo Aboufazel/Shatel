@@ -3,8 +3,22 @@
 
 @media only screen and (max-width: 768px) {
     .container {
-        width: 100%;
+        width: 100% !important;
     }
+
+    .english{
+        display: none !important;
+        margin: 0px 12px 0px 0px;
+        font-size: 1.4rem;
+    }
+    .header__bottom__desktopitems{
+        display: none !important;
+        width: 100%;
+        gap: 25px;
+        font-size: 1.4rem;
+    }
+
+  
     .desktop__topMenu{
         display: none !important;
         align-items: center;
@@ -79,8 +93,18 @@
 
 
 .possibilities__item{
+    cursor: pointer;
     display: flex;
     align-items: center;
+    height: 60px;
+}
+
+.possibilities__item--selected{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0px 5px 0px 5px;
+    background: linear-gradient(360deg,#0078ee,#00a4f6) #0078ee;
     height: 60px;
 }
 .header__top__mobileMenu{
@@ -309,14 +333,7 @@
 
 
 
-@media only screen and (max-width: 768px){
-    .header__bottom__desktopitems{
-        display: none !important;
-        width: 100%;
-        gap: 25px;
-        font-size: 1.4rem;
-    }
-}
+
 
 
 .header__top__desktopMenu{
@@ -329,14 +346,21 @@
     display: flex;
     align-items: center;
     margin:0px 0px 0px 25px ;
-    gap:25px;
+    gap:17px;
 }
 
 .desktop__topMenu__item{
+    cursor: pointer;
     display: flex;
     justify-content: center;
+    padding: 0px 8px 0px 8px;
     align-items: center;
     height: 60px;
+}
+
+.desktop__topMenu__item:hover{
+   cursor: pointer;
+   background: linear-gradient(180deg,#0078ee,#00a4f6) #0078ee;
 }
 
 .possibilities{
@@ -353,15 +377,10 @@
     font-size: 1.4rem;
 }
 
-@media only screen and (max-width: 768px){
-    .english{
-        display: none !important;
-        margin: 0px 12px 0px 0px;
-        font-size: 1.4rem;
-    }
-}
+
 
 .english{
+    cursor: pointer;
     display: flex;
     margin: 0px 12px 0px 8px;
     height: 60px;
