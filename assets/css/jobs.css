@@ -22,42 +22,6 @@ body{
 
 /********************************start_Of job slider****************************/
 
-@media only screen and (width:428px){
-    .jobsPage__slider{
-        display: flex !important;
-        width: 100%;
-        justify-content: center !important;
-        align-items: center;
-    }
-
-}
-
-@media only screen and (width:320px) {
-    .jobsPage__slider img{
-        display: flex;
-        width: 320px !important;
-        border-bottom: 5px solid var(--slider-border-color);
-    }
-}
-
-@media only screen and (width:375px) {
-    .jobsPage__slider img{
-        display: flex;
-        width: 375px !important;
-        border-bottom: 5px solid var(--slider-border-color);
-    }
-}
-
-@media only screen and (width:425px) {
-    .jobsPage__slider img{
-        display: flex;
-        width: 425px !important;
-        border-bottom: 5px solid var(--slider-border-color);
-    }
-}
-
-
-
 
 
 
@@ -156,6 +120,27 @@ body{
 
 /************************************************/
 
+@media only screen and (min-width:768px){
+    .job_offer{
+        display: none !important;
+        flex-direction: column;
+        background: var(--gray-background);
+        width: 100%;
+        align-items: center;
+    }
+    
+    .job__offer__box{
+        display: none !important;
+        flex-direction: column;
+        width: 100%;
+        margin: 0px 0px 25px 0px;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+        color: black;
+    }
+}
+
 .job_offer{
     display: flex;
     flex-direction: column;
@@ -186,7 +171,7 @@ body{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     background-repeat: no-repeat;
     background-size:contain;
-    width: 75%;
+    width: 60%;
     border-radius: 10px;
     height: 30rem;
 }
@@ -281,6 +266,67 @@ body{
     text-decoration: none;
 }
 
+
+@media only screen and (max-width:767px){
+    .desktop__job_offer{
+        display: none!important;
+        flex-direction: row;
+        justify-content: center !important;
+        width: 100%;
+        background: var(--gray-background);
+    }
+    
+    
+    .desktop__job__offer__box{
+        display: none !important;
+        flex-direction: row !important;
+        width: 100%;
+        margin: 0px 0px 25px 0px;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+        color: black;
+    
+}
+
+}
+
+
+.desktop__job_offer{
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center !important;
+    width: 100%;
+    background: var(--gray-background);
+}
+
+
+.desktop__job__offer__box{
+    display: flex;
+    flex-direction: row !important;
+    width: 100%;
+    margin: 0px 0px 25px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    color: black;
+}
+
+.desktop__job_offer_box__items{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    background-image: url("../svg/background-elements.svg");
+    background-position:start;
+    margin: 10px 0px 10px 0px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 22.5%;
+    border-radius: 10px;
+    height: 30rem;
+}
 /********************job__offer********************/
 
 
@@ -299,6 +345,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 15px;
     font-size: 1.4rem;
     width: 100%;
     text-align: center;
@@ -367,7 +414,7 @@ body{
 /********************job__offer********************/
 
 /************hiring__process*********/
-@media only screen and (width:320px) {
+@media only screen and (max-width:426px) {
 
     .hiring__process__box{
         display: flex !important;
@@ -388,6 +435,17 @@ body{
         font-size: 1.6rem;
     }
     
+    
+}
+
+@media only screen and (width:768px){
+    .hiring__process__box{
+        display: flex;
+        justify-content: space-around;
+        margin: 60px 0px 15px 0px;
+        flex-direction: row-reverse;
+        gap:0px !important;
+    }
     
 }
 
