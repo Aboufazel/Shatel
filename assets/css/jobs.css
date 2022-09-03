@@ -355,7 +355,7 @@ body{
     width: 100%;
     background: url(../pics/job-pic-7.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     justify-content: center;
 }
 
