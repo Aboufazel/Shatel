@@ -194,7 +194,7 @@ p {
   .main {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding: 0;
     flex-wrap: wrap;
@@ -715,10 +715,10 @@ textarea {
 .fa {
   width: 30px;
   height: 30px;
-  display: inline-flex;
+  display: flex !important;
   justify-content: center;
   align-items: center;
-
+  align-self: center;
   border-radius: 5px;
   background-color: #fff;
   color: #f26322;
@@ -727,6 +727,7 @@ textarea {
 .contact__fax,
 .contact__mail {
   font-size: 1.3rem;
+  justify-content: center;
   align-self: center;
   text-decoration: none;
   color: white;
