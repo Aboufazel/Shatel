@@ -18,12 +18,73 @@ body{
 .margin-bottom{
     margin: 0px 0px 90px 0px;
 }
+
+
+/********************************start_Of job slider****************************/
+
+@media only screen and (width:428px){
+    .jobsPage__slider{
+        display: flex !important;
+        width: 100%;
+        justify-content: center !important;
+        align-items: center;
+    }
+
+}
+
+@media only screen and (width:320px) {
+    .jobsPage__slider img{
+        display: flex;
+        width: 320px !important;
+        border-bottom: 5px solid var(--slider-border-color);
+    }
+}
+
+@media only screen and (width:375px) {
+    .jobsPage__slider img{
+        display: flex;
+        width: 375px !important;
+        border-bottom: 5px solid var(--slider-border-color);
+    }
+}
+
+@media only screen and (width:425px) {
+    .jobsPage__slider img{
+        display: flex;
+        width: 425px !important;
+        border-bottom: 5px solid var(--slider-border-color);
+    }
+}
+
+
+
+
+
+
+
 .jobsPage__slider img{
     display: flex;
     width: 100%;
     border-bottom: 5px solid var(--slider-border-color);
 }
 
+
+/********************************End_Of job slider****************************/
+
+
+
+@media only screen and (max-width:428px) {
+    .row_flex__topic{
+        margin: 45px 0px 25px 0px !important;
+        display: flex;
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        color: var(--topic-color);
+    }
+    
+    
+}
 .row_flex__topic{
     margin: 130px 0px 90px 0px;
     display: flex;
@@ -42,34 +103,32 @@ body{
     height: 2px;
     background: var(--title-border-color);
 }
+/************************************************/
 
-
-.row_flex__picBox{
+.textPics__Box{
     display: flex;
-    width: 50%;
+    flex-direction: column;
+    width: 100%;
     justify-content: center;
 }
 
-.text__row__margin{
-    margin: 5px 0px  90px 0px;
-}
-
-.row_flex__picBox img{
-     border-radius: 5px;
-}
-
-.row_flex__textBox{
+.textPics__box__items{
     display: flex;
-    padding: 50px;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
 }
 
-.row_flex__textBox__title{
-    position: relative;
+.textPics__box__items img{
+    border-radius: var(--box-border-radius);
 }
 
-.row_flex__textBox__title::after{
+.textPics__box__items__title{
+    margin: 12px 0px 0px 0px;
+}
+
+.textPics__box__items__title::after{
     content: "";
     width: 20px;
     height: 2px;
@@ -78,31 +137,36 @@ body{
     background: var(--slider-border-color);
 }
 
-.row_flex__textBox__title h2{
-    margin-bottom: 15px;
-}
-.row_flex__textBox__text{
+
+.textPics__box__items__text{
+    display: flex;
+    margin: 25px 0px 0px 0px;
     font-size: 1.4rem;
-    line-height: 45px;
-    font-weight: 500;
-}
+    line-height: 35px !important ;
 
-.row_flex__textBox__text p{
-    margin-top: 5px;
 }
-
 
 .video_box{
     display: flex;
-    width: 100%;
+    width: 320px !important;
     margin: 0px 0px 100px 0px;
     justify-content: center;
 }
 
 
+/************************************************/
 
-.job_offer_box{
+.job_offer{
     display: flex;
+    flex-direction: column;
+    background: var(--gray-background);
+    width: 100%;
+    align-items: center;
+}
+
+.job__offer__box{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin: 0px 0px 25px 0px;
     justify-content: center;
@@ -118,10 +182,11 @@ body{
     background-color: white;
     background-image: url("../svg/background-elements.svg");
     background-position:start;
+    margin: 10px 0px 10px 0px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     background-repeat: no-repeat;
     background-size:contain;
-    width: 22%;
+    width: 75%;
     border-radius: 10px;
     height: 30rem;
 }
@@ -130,8 +195,6 @@ body{
     cursor: pointer;
     box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.21);
 }
-
-
 .job_offer_box__items--svg{
     display: flex;
     justify-content: center;
@@ -218,6 +281,10 @@ body{
     text-decoration: none;
 }
 
+/********************job__offer********************/
+
+
+/*********************job_note_box*****************/
 
 .jobs__note__box{
     display: flex;
@@ -232,10 +299,14 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    line-height: 5.5rem;
     font-size: 1.4rem;
     width: 100%;
     text-align: center;
+}
+
+.jobs__note__box__text p{
+    line-height: 4rem;
+    margin: 15px 0px 15px 0px;
 }
 
 .note__row_flex__topic{
@@ -259,7 +330,9 @@ body{
     height: 2px;
     background: var(--title-border-color);
 }
-
+.jobs__note__box__text__btn{
+    margin-top: 15px;
+}
 .jobs__note__box__text__btn a{
     text-align: center;
     text-decoration: none;
@@ -276,12 +349,13 @@ body{
     cursor: pointer;
 }
 
-
 .pic__background__box{
     display: flex;
     color: var(--color-white);
     width: 100%;
     background: url(../pics/job-pic-7.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
     justify-content: center;
 }
 
@@ -290,15 +364,28 @@ body{
 }
 
 
+/********************job__offer********************/
 
-@media only screen and(max-width:768px) {
+/************hiring__process*********/
+@media only screen and (width:320px) {
 
     .hiring__process__box{
-        display: flex;
+        display: flex !important;
+        flex-direction: column !important;
         justify-content: center;
+        align-items: center;
         margin: 60px 0px 15px 0px;
-        flex-direction: column;
         gap:45px;
+    }
+
+    .title p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 35px 0px 20px 0px !important;
+        align-items: center;
+        color: var(--footer-color);
+        font-size: 1.6rem;
     }
     
     
