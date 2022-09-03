@@ -4,3 +4,7 @@ collapsibles.forEach((item) =>
     this.classList.toggle("collapsible--expanded");
   })
 );
+const boxProduct = document.querySelector(".box__product");
+boxProduct.addEventListener("click", function (e) {
+  boxProduct.classList.toggle("click");
+});
