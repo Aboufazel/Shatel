@@ -712,6 +712,7 @@ textarea {
   padding: 10px;
   margin-top: 20px;
   width: 100%;
+  z-index: 99;
 }
 .contact__sell__tech {
   padding: 0;
