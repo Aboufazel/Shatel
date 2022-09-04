@@ -216,6 +216,18 @@ p {
   .card__content {
     padding: 10px;
   }
+  .card__header {
+    position: relative;
+  }
+  .card__header::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    top: 15px;
+    margin-top: 25px;
+    position: absolute;
+    background: var(--underline-color);
+  }
 }
 @media screen and (min-width: 1024px) {
   .card {
@@ -223,7 +235,7 @@ p {
   }
 }
 @media screen and (min-width: 1440px) {
-  .container {
+  .b2b__container {
     width: 80%;
   }
   .card {
@@ -247,7 +259,7 @@ p {
   }
 }
 @media screen and (min-width: 2560px) {
-  .container {
+  .b2b__container {
     width: 60%;
     height: 50vh;
   }
@@ -353,6 +365,19 @@ p {
     justify-content: center;
     align-items: center;
     margin-bottom: 0;
+  }
+  .article__header {
+    position: relative;
+  }
+  .article__header::after {
+    content: "";
+    width: 100px;
+    height: 5px;
+    top: 25px;
+    margin-top: 25px;
+    position: absolute;
+    background: var(--underline-color);
+    right: 0;
   }
   .article--picture {
     width: 100%;
@@ -633,7 +658,19 @@ textarea {
   display: flex;
   flex-direction: column;
   font-size: 1.3rem;
+  position: relative;
   color: rgb(255, 165, 87);
+}
+.catalogue__header::after {
+  display: flex;
+  align-self: center;
+  content: "";
+  width: 35px;
+  height: 3px;
+  top: 25px;
+  margin-top: 25px;
+  position: absolute;
+  background: var(--underline-color);
 }
 
 .catalogue__btn {
