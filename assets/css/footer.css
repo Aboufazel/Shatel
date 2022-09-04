@@ -202,7 +202,7 @@ footer::before{
         border-top: 1px solid rgba(220, 220, 220, 0.08);
         font-size: 1.2rem;
         padding: 15px 10px 0px 45px;
-        color: #ccc;
+        color: #ccc !important;
     }
     .footer__botton__box__right-side{
         display: flex;
@@ -224,7 +224,7 @@ footer::before{
     border-top: 1px solid rgba(220, 220, 220, 0.08);
     font-size: 1.2rem;
     padding: 15px 10px 0px 45px;
-    color: #ccc;
+    color: #ccc !important;
 }
 
 .footer__botton__box__right-side{
