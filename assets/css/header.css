@@ -99,6 +99,11 @@
     height: 60px;
 }
 
+.possibilities__item a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+
 .possibilities__item--selected{
     cursor: pointer;
     display: flex;
