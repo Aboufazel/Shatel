@@ -529,7 +529,7 @@ textarea {
     flex-direction: row;
     align-items: flex-start;
     height: 100vh;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
   }
   .form__image {
     width: 60%;
