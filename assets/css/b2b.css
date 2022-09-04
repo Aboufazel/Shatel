@@ -454,7 +454,6 @@ p {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  margin-bottom: 70px;
 }
 .form {
   padding-top: 20px;
@@ -530,6 +529,7 @@ textarea {
     flex-direction: row;
     align-items: flex-start;
     height: 100vh;
+    margin-bottom: 70px;
   }
   .form__image {
     width: 60%;
