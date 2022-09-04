@@ -223,7 +223,7 @@ p {
   }
 }
 @media screen and (min-width: 1440px) {
-  .container {
+  .b2b__container {
     width: 80%;
   }
   .card {
@@ -247,7 +247,7 @@ p {
   }
 }
 @media screen and (min-width: 2560px) {
-  .container {
+  .b2b__container {
     width: 60%;
     height: 50vh;
   }
