@@ -67,7 +67,6 @@ p {
 .banner__image {
   position: relative;
   width: 100%;
-  height: 100%;
 }
 
 .banner__description {
@@ -91,11 +90,8 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  .banner {
-    height: 30vh;
-  }
   .banner__description {
-    bottom: 170px;
+    bottom: 150px;
   }
   .banner__header {
     font-size: 1.8rem;
@@ -103,12 +99,12 @@ p {
   .banner__text {
     font-size: 0.8rem;
   }
+  .banner__image {
+    height: 200px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-  .banner {
-    height: 35vh;
-  }
   .banner__description {
     bottom: 210px;
   }
@@ -118,19 +114,24 @@ p {
   .banner__text {
     font-size: 1.3rem;
   }
+  .banner__image {
+    height: 300px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-  .banner {
-  }
   .banner__description {
-    bottom: 300px;
+    bottom: 200px;
+    position: absolute;
   }
   .banner__header {
     font-size: 4.4rem;
   }
   .banner__text {
     font-size: 1.7rem;
+  }
+  .banner__image {
+    height: 400px;
   }
 }
 /* cards */
@@ -230,6 +231,11 @@ p {
 @media screen and (min-width: 1024px) {
   .card {
     width: 300px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .card {
+    width: 330px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -417,7 +423,6 @@ p {
   }
   .article {
     padding: 10px;
-    height: 65vh;
   }
   .article__content {
     padding-left: 30px;
@@ -532,7 +537,7 @@ textarea {
     margin-bottom: 100px;
   }
   .form__image {
-    width: 60%;
+    width: 430px;
     height: 400px;
     margin-top: 25px;
     padding-right: 10px;
@@ -613,13 +618,20 @@ textarea {
   select {
     margin-right: 10px;
   }
+  .form__contact {
+    width: 100%;
+    padding: 0;
+  }
+  .form__image {
+    width: 80%;
+  }
   .form--image {
-    width: 90%;
+    width: 100%;
     height: 550px;
     margin-right: 20px;
   }
   .form__person {
-    width: 95%;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1440px) {
