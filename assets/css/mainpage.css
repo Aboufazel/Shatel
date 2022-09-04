@@ -1,3 +1,10 @@
+.main__container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
 /* slider_1_main */
 .slider__main{
   cursor: pointer;
@@ -41,7 +48,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fafcfd
+  margin: auto;
+  background-color: #fafcfd;
+  border: none;
 }
 .Description{
   display: flex;
@@ -73,8 +82,9 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 80px 0;
+  margin: 80px auto;
 }
+
 .card img {
   width: 100px;
 }
@@ -117,6 +127,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
+  margin: auto;
 }
 .card__Customers{
   padding:8% 0 0 0 ;
