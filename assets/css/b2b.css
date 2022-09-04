@@ -404,6 +404,7 @@ p {
 
   .article__image {
     margin-top: 10px;
+    height: 550px;
   }
   .article--picture {
     height: 100%;
