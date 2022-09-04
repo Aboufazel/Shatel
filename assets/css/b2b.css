@@ -232,6 +232,11 @@ p {
     width: 300px;
   }
 }
+@media screen and (min-width: 1300px) {
+  .card {
+    width: 330px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .b2b__container {
     width: 80%;
