@@ -793,8 +793,8 @@ textarea {
   text-align: center;
   line-height: 1.4;
 }
-.fa-linkedin,
-.fa-instagram {
+.contact__instagram,
+.contact__linkdin {
   align-self: center;
   background-color: rgb(243, 244, 246);
   margin: 10px;
