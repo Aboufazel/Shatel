@@ -653,7 +653,6 @@ textarea {
   height: 30vh;
   background-color: rgb(0, 42, 99);
   margin-top: 20px;
-  padding: 30px;
 }
 .catalogue__header {
   display: flex;
@@ -693,6 +692,11 @@ textarea {
 .catalogue__btn:hover {
   background-color: white;
   color: black;
+}
+@media screen and (min-width: 1024px) {
+  .catalogue {
+    padding: 30px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .catalogue__btn {
