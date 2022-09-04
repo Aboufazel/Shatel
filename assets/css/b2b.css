@@ -235,6 +235,7 @@ p {
 @media screen and (min-width: 1440px) {
   .b2b__container {
     width: 80%;
+    justify-content: center;
   }
   .card {
     width: 350px;
@@ -332,7 +333,7 @@ p {
   border: none;
 }
 .article__image {
-  height: 110%;
+  height: 400px;
   padding: 10px;
   margin-bottom: 30%;
 }
@@ -389,7 +390,8 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .article {
-    height: 75vh;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
   .article__container {
     display: flex;
@@ -525,7 +527,7 @@ textarea {
     padding: 10px;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    justify-content: center;
     margin-bottom: 100px;
   }
   .form__image {
@@ -609,6 +611,14 @@ textarea {
   textarea,
   select {
     margin-right: 10px;
+  }
+  .form--image {
+    width: 90%;
+    height: 550px;
+    margin-right: 20px;
+  }
+  .form__person {
+    width: 95%;
   }
 }
 @media screen and (min-width: 1440px) {
