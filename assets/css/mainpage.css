@@ -58,7 +58,9 @@
   align-items: center;
   justify-content: flex-start;
   height: 300px;
+  position: relative;
 }
+
 
 .Description__top h2{
   margin: 56px 0;
@@ -100,6 +102,7 @@
   gap: 30px;
   border-radius: 8px;
   background-color: #fff;
+  position: relative;
 }
 .card p,h2 {
   text-align: center;
@@ -131,6 +134,9 @@
 .card__Customers{
   padding:8% 0 0 0 ;
 }
+.Shuttle__club{
+  position: relative;
+}
 .Shuttle__club p,h5{
   color: rgb(106, 107, 110);
   font-size: 14px;
@@ -157,10 +163,14 @@
   padding: 8px 30px;
   color: #fff;
   border: none;
-  cursor: pointer;
   font-size: 14px;
   height: 39px;
   margin: 30px 0 0 0;
+}
+.btn:hover{
+  background-color:#f4511e;
+  transition: all 0s ease ;
+  
 }
 .bg__Customers{
   background-image: url(../image/elements_bg.png);
@@ -182,6 +192,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .title{
@@ -192,6 +203,21 @@
 .box__slider{
   display: flex;
   justify-content: center;
+}
+.image__slid--footer::after{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: 'پیشنهادویژه';
+    position: absolute;
+    color: #000;
+    transform: rotate(45deg);
+    font-size: 10px;
+    top: 20px;
+    right: -30px;
+    background-color: rgb(250,207,84);
+    width: 128px;
+    height: 30px;
 }
 .card__slide,.box__News{
   display: flex;
@@ -206,6 +232,8 @@
   align-items: center;
   width: 300px;
   height: 300px;
+  position: relative;
+  overflow: hidden;
 }
 .text__slider h2,h5{
   text-align: right;
@@ -227,6 +255,9 @@
   padding: 5px 30px;
   border-radius: 25px;
   border: none;
+}
+button{
+  cursor: pointer;
 }
 .p__25{
   padding: 25px;
@@ -259,7 +290,12 @@ li{
   bottom: 10px;
   cursor: pointer;
 }
-
+.parents{
+  position: relative;
+}
+.d_none{
+  display: none;
+}
 @media screen and (max-width:576px){
   .col-xs-1{width: 8.33%;}
   .col-xs-2{width: 16.66%;}
@@ -273,9 +309,6 @@ li{
   .col-xs-10{width: 83.33%;}
   .col-xs-11{width: 91.66%;}
   .col-xs-12{width: 100%;}
-  .d_none{
-    display: none;
-  }
   .box__News{
     flex-direction: column;
     align-items: flex-start;
@@ -296,6 +329,59 @@ li{
   .col-sm-12{width: 100%;}
 }
 @media screen and (min-width:768px){
+  .underline__title--card::after{
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 2px;
+    top: 160px;
+    right: 44%;
+    background: var(--underline-color);
+  }
+  .overline__title--card::after{
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    top: 170px;
+    right: 45%;
+    background: var(--underline-color);
+  }
+  .Description__top::after{
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 1px;
+    top: 120px;
+    right: 47%;
+    background: var(--underline-color);
+  }
+  .underline__title::after{
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 2px;
+    top: 90px;
+    right: 0px;
+    background: var(--underline-color);
+  }
+  .underline__title--slider::after{
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    top: 140px;
+    right: 48%;
+    background: var(--underline-color);
+  }
+  .underline__title--News::after{
+    position: absolute;
+    content: "";
+    width: 83px;
+    height: 2px;
+    right: 10;
+    background: var(--underline-color);
+  }
   .col-md-1{width: 8.33%;}
   .col-md-2{width: 16.66%;}
   .col-md-3{width: 25%;}
@@ -315,9 +401,6 @@ li{
   }
   .image{
     width: 49% !important;
-  }
-  .d_none{
-    display: none;
   }
 }
 @media screen and (min-width:992px){
