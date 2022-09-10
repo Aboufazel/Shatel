@@ -19,7 +19,7 @@ let goNext =() =>{
 }
 // variables
 let active = 0;
-let timer =8000
+let timer =8000;
 let slider__main = document.querySelector('.slider__main');
 let slide =document.querySelectorAll('.slide');
 let prev =document.querySelector('.prev');
